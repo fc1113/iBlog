@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人博客</title>
+<link rel='stylesheet' style='text/css' href='index.css'/>
+<script src='../tool.js'></script>
+<script src='../base.js'></script>
+<script src='../Base_drag.js'></script>
+<script src='index.js'></script>
+
+</head>
+
+<body>
+
+<div id='header'>
+<div class='logo'><img src='images/logo.jpg' alt=''></div>
+<div class='member'>个人中心
+<ul class='member_ul'>
+<li><a href="#">设置</a></li>
+<li><a href="#">换肤</a></li>
+<li><a href="#">帮助</a></li>
+<li><a href="#">退出</a></li>
+</ul>
+</div>
+<div class='reg'>注册</div>
+<div class='login'>登录</div>
+
+</div>
+
+<div id='reg'>
+<h2><img src='images/close.png' alt='' class='close'>会员注册</h2>
+<form>
+<dl>
+<dd>用 户 &nbsp名：<input type='text'name='user'class='text'>
+<span class='info info_user'>请输入用户名，由2~20位的字母、数字、下划线组成！</span>
+<span class='error error_user'>输入不合法，请重新输入！</span>
+<span class='succ succ_user'>可用</span>
+</dd>
+<dd>密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码：<input type='password'name='pass'class='text'>
+<span class='info info_pass'>
+<p>安全级别：<strong class='s s1'>■</strong><strong class='s s2'>■</strong><strong class='s s3'>■</strong><strong class='s s4'style='font-weight:normal'></strong></p>
+<p><strong class='q1'>○</strong>6-20个字符</p>
+<p><strong class='q2'>○</strong>只能包含大小写字母、数字和非空格字符</p>
+<p><strong class='q3'>○</strong>大、小写字母、数字、非空字符，2种以上</p>
+</span>
+<span class='error error_pass'>输入不合法，请重新输入！</span>
+<span class='succ succ_pass'>可用</span>
+</dd>
+<dd>密码确认：<input type='password'name='notpass'class='text'/>
+<span class='info info_notpass'>请输入确认密码！</span>
+<span class='error error_notpass'>密码不一致，请重新输入！</span>
+<span class='succ succ_notpass'>可用</span>
+<span class='error sub_notpass'>未密码确认，请确认！</span>
+</dd>
+<dd>提&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp问：<select name='ques'>
+<option value='0'>--------请选择--------</option>
+<option value='1'>----身高是多少？</option>
+<option value='2'>----三围是多少？</option>
+<option value='3'>----爱的人是谁？</option>
+<option value='4'>----爱过人是谁？</option>
+<option value='5'>----爱过吗？</option>
+<option value='6'>----约吗？</option>
+</select>
+<span class='error error_ques'>尚未选择，请选择！</span>
+</dd>
+<dd>回&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp答：<input type='text'name='ans'class='text'>
+<span class='info info_ans'>请输入回答，2-20位！</span>
+<span class='error error_ans'>回答不合法，请重新输入！</span>
+<span class='succ succ_ans'>可用</span>
+</dd>
+<dd>电子邮件：<input type='text'name='email'class='text'autocomplete='off'>
+<span class='info info_email'>请输入电子邮件！</span>
+<span class='error error_email'>邮件不合法，请重新输入！</span>
+<span class='succ succ_email'>可用</span>
+<ul class='all_email'>
+<li><span></span>@qq.com</li>
+<li><span></span>@163.com</li>
+<li><span></span>@sohu.com</li>
+<li><span></span>@sina.com</li>
+<li><span></span>@gmail.com</li>
+</ul>
+</dd>
+<dd class='birthday'>生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日：<select name='year'>
+<option value='0'>- 年 -</option>
+</select> - 
+<select name='month'>
+<option value='0'>- 月 -</option>
+</select> - 
+<select name='day'>
+<option value='0'>- 日 -</option>
+</select>
+<span class='error error_birthday'>尚未全部选择，请选择！</span>
+</dd>
+<dd style='height:105px;'><span style='vertical-align:85px'>备&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注：</span>
+<textarea name='ps'></textarea>
+</dd>
+<dd style='display:block'class='ps'>还可以输入<strong class='num'>200</strong >字</dd>
+<dd style='display:none'class='ps'>
+已超过<strong class='num'style='color:red'></strong>个字,<span class='clear'>清尾</span>
+</dd>
+<dd style='padding:0 0 0 80px;'><input type='button'name='sub' class='submit' /></dd>
+</dl>
+</form> 
+</div>
+
+<div id='login'>
+<h2><img src='images/close.png' alt='' class='close'>网站登录</h2>
+<div class='user'>账 号:<input type='text'name='user' class='text'/></div>
+<div class='pass'>密 码:<input type='password'name='pass'class='text'/></div>
+<div class='button'><input type='button' class='submit'value='' /></div>
+<div class='other'>注册新用户 | 忘记密码?</div>
+</div>
+
+<div id='blog'>
+<span class='top'>樊泽安的博客</span>
+<span class='bottom'>https://fc1113.github.io/iBlog/blog/index.html</span>
+</div>
+
+<div id='nav'>
+
+<ul class='about'>
+<li></li>
+<li><a href='#photo'>精彩相册</a></li>
+<li></li>
+<li></li>
+</ul>
+
+<ul class='black'>
+<li>首页</li>
+<li>相册专辑</li>
+<li>我的音乐</li>
+<li>关于我</li>
+</ul>
+<div class='nav_bg'>
+<ul class='white'>
+<li>首页</li>
+<li>相册专辑</li>
+<li>我的音乐</li>
+<li>关于我</li>
+</ul>
+</div>
+</div>
+
+<div id='main'>
+<div id='sidebar'>
+
+<div class='head_img'>
+<h1><span class='left'>个人资料</span><span class='right'>[管理]</span></h1>
+<div class='head_image'>
+<img src='images/head_image.png' />
+</div>
+<span>樊泽安</span>
+
+</div>
+
+<h2>前端教育1</h2>
+	<ul>
+		<li><a href='#'>关于JavaScript的21个问题集锦</a></li>
+		<li><a href='#'>如何成为全栈工程师：遵循一万小时定律</a></li>
+		<li><a href='#'>360职位解忧铺|关于前端“他”有话说</a></li>
+		<li><a href='#'>自学前端的心路历程——樊泽安</a></li>
+		<li><a href='#'>常见的web后门大盘点</a></li>
+	</ul>
+	
+<h2>前端教育2</h2>
+	<ul>
+		<li><a href='#'>关于JavaScript的21个问题集锦</a></li>
+		<li><a href='#'>如何成为全栈工程师：遵循一万小时定律</a></li>
+		<li><a href='#'>360职位解忧铺|关于前端“他”有话说</a></li>
+		<li><a href='#'>自学前端的心路历程——樊泽安</a></li>
+		<li><a href='#'>常见的web后门大盘点</a></li>
+	</ul>
+	
+<h2>前端教育3</h2>
+	<ul>
+		<li><a href='#'>关于JavaScript的21个问题集锦</a></li>
+		<li><a href='#'>如何成为全栈工程师：遵循一万小时定律</a></li>
+		<li><a href='#'>360职位解忧铺|关于前端“他”有话说</a></li>
+		<li><a href='#'>自学前端的心路历程——樊泽安</a></li>
+		<li><a href='#'>常见的web后门大盘点</a></li>
+	</ul>	
+</div>
+
+<div id='index'>
+此处发表博文，未做。用户的验证登录，未做。注册后端数据处理未做，
+<hr>
+注册时在前端的数据验证已做。相册图集的延迟加载已做。图片的大图预览时的预先加载已做。
+</div>
+
+<div id='banner'>
+<img src='images/banner1-1.png' alt='图片描述1'/>
+<img src='images/banner2-2.png' alt='图片描述2'/>
+<img src='images/banner3-3.png' alt='图片描述3'/>
+<ul>
+<li>●</li>
+<li>●</li>
+<li>●</li>
+</ul>
+<span></span>
+<strong>图片描述1</strong>
+</div>
+
+<div id='photo'>
+	<dl>
+	    <dt><img bigsrc='images/p1.jpg'xsrc='images/p1.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>山清水秀</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p2.jpg' xsrc='images/p2.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>湖光山色</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p3big.jpg' xsrc='images/p3.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>青山绿水</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p4.jpg' xsrc='images/p4.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>草长莺飞</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p5.jpg' xsrc='images/p5.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>层峦叠嶂</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p6.jpg' xsrc='images/p6.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>春寒料峭</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p7.jpg' xsrc='images/p7.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>春山如笑</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p8.jpg' xsrc='images/p8.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>风光旖旎</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p9.jpg' xsrc='images/p9.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>水天一色</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p10big.jpg' xsrc='images/p10.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>春和景明</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p11.jpg' xsrc='images/p11.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>波光粼粼</dd>
+	</dl>
+	<dl>
+	    <dt><img bigsrc='images/p12big.jpg' xsrc='images/p12.jpg' src='images/wait_load.jpg' class='wait_load'alt=''title='预览模式' /></dt>
+		<dd>春树暮云</dd>
+	</dl>
+</div>
+
+</div>
+
+
+<div id='share'>
+<h2>分享到</h2>
+<ul>
+<li><a href="#"class='a'>一键分享</a></li>
+<li><a href="#"class='b'>新浪微博</a></li>
+<li><a href="#"class='c'>人人网</a></li>
+<li><a href="#"class='d'>百度相册</a></li>
+<li><a href="#"class='e'>腾讯朋友</a></li>
+<li><a href="#"class='f'>豆瓣网</a></li>
+<li><a href="#"class='g'>百度新首页</a></li>
+<li><a href="#"class='h'>和讯微博</a></li>
+<li><a href="#"class='i'>QQ空间</a></li>
+<li><a href="#"class='j'>百度搜索</a></li>
+<li><a href="#"class='k'>腾讯微博</a></li>
+<li><a href="#"class='l'>开心网</a></li>
+<li><a href="#"class='m'>百度贴吧</a></li>
+<li><a href="#"class='n'>搜狐微博</a></li>
+<li><a href="#"class='o'>QQ好友</a></li>
+<li><a href="#"class='p'>更多...</a></li>
+</ul>
+<div class='share_footer'><a href='###'>百度分享</a><span></span></div>
+</div>
+
+<div id='photo_big'>
+    <h2><img src='images/close.png' alt='' class='close'>预览模式</h2>
+	<div class='big'>
+	    <img src='images/loading.gif' alt=''>
+		<strong class='sl'> &lt </strong>
+	   <strong class='sr'> &gt </strong>
+	   <span class='left'></span>
+	   <span class='right'></span>
+	   <span class='shade'></span>
+	   <em class='des'></em>
+	   <em class='index'></em>
+	</div>
+</div>
+<div id='screen'></div>
+
+
+<div class="footer">
+		<div class="foot">
+			<div class="foot_logo"></div>
+			<div class="footwaper">
+				<div class="des">
+					<p>代码改变世界</p>
+					京ICP备 *****号
+				</div><!--des-->
+				<div class="left">
+					<a href="#">网站首页</a><br />
+					<a href="#">关于我们</a><br />
+					<a href="#">加入我们</a><br />
+				</div>
+				<div class="right">
+					<a href="#">内容招募</a><br />
+					<a href="#">联系我们</a><br />
+					<a href="#">意见反馈</a><br />
+				</div>
+				<div class="attention">
+					在这里关注我的动态<br />
+					<a class="qqzone"href="#"></a>
+					<a class="sinaweibo"href="#"></a>
+					<a class="qqweibo"href="#"></a>
+				</div>
+			</div><!--footwaper-->
+		</div>
+		<span style='display:block;text-align:center;margin-top:10px;'>My GitHub：https://fc1113.github.io</span>
+		<span style='display:block;text-align:center;margin-top:5px;'>我再说一遍最美的那句，你回家了我在等你呢。</span>
+	</div>
+
+
+<span id='return'><a href='#header'>返回顶部</a></span>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
